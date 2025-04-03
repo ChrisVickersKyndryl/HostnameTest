@@ -1,0 +1,6 @@
+- name: Get Inventory Hostname
+  hosts: all
+  tasks:
+    - name: Display inventory hostname
+      debug:
+        msg: "Inventory hostname is {{ inventory_hostname }}"
